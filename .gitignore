@@ -1,0 +1,6 @@
+ThAyllu.sublime-project
+ThAyllu.sublime-workspace
+db.sqlite3
+migrations
+*.pyc
+staticfiles
