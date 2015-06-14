@@ -2,6 +2,6 @@
   font-family: 'Lobster', cursive;
 }
 
-.col-smoth-resize{
-  transition: width ease 1s;
+.smoth-resize{
+  transition: all ease 1s;
 }
