@@ -2,7 +2,6 @@
 /* Minimun width of the page
 /* -------------------------------------------------------------------------- */
   html, body{
-    min-width: 400px;
     margin: 0;
     padding: 0;
   }
