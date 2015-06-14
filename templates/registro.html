@@ -31,12 +31,16 @@
     <meta name="description" content="Página web de la Dirección de Astrofísica (DIAST) de la Comisión Nacional de Desarollo e Investigación Aeroespacial (CONIDA), Agencia Espacial del Perú">
     <title>ThAyllu | Registro de promotores de salud </title>
     <link rel="shortcut icon" type="image/x-icon" href="{% static 'media/favicon.png' %}" />
-    <link rel="stylesheet" media="all" href="{% static 'css/normalize.min.css' %}" />
-    <link rel="stylesheet" media="all" href="{% static 'css/font-awesome.min.css' %}" />
-    <link rel="stylesheet" media="all" href="{% static 'css/bootstrap.min.css' %}" />
+    <link rel="stylesheet" media="all" href="{% static 'css/normalize.css' %}" />
+    <link rel="stylesheet" media="all" href="{% static 'css/font-awesome.css' %}" />
+    <link rel="stylesheet" media="all" href="{% static 'css/bootstrap.css' %}" />
     <link rel="stylesheet" media="all" href="{% static 'css/colors.css' %}" />
-    <link rel="stylesheet" media="all" href="{% static 'css/style.css' %}" />
-    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'> {% block CSS %}{% endblock CSS %}
+    <link rel="stylesheet" media="all" href="{% static 'css/override.css' %}" />
+    <link rel="stylesheet" media="all" href="{% static 'css/extend.css' %}" />
+    <link rel="stylesheet" media="all" href="{% static 'css/helpers.css' %}" />
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+
+    {% block CSS %}{% endblock CSS %}
 
     <script src="{% static 'js/modernizr.min.js' %}"></script>
 
@@ -45,12 +49,10 @@
 
   <body class="grey lighten-5 grey-text text-darken-4">
     {% block MENU %}
-      <header>
-        <nav class="container navbar navbar-default navbar-inverse navbar-fixed-top">
-          <div class="navbar-header">
-            <a class="navbar-brand" href="index.html">
-              <p class="Lobster mediano">ThAyllu</p>
-            </a>
+      <header class="blue">
+        <nav class="navbar blue">
+          <div class="container">
+            <h2 class="Lobster grey-text text-lighten-5">ThAyllu</h2>
           </div>
         </nav>
       </header>
@@ -62,20 +64,14 @@
     {% endblock CONTENT %}
 
     {% block FOOTER %}
-    <footer class="page-footer grey darken-3">
-      <div class="footer-copyright grey darken-4">
-        <div class="container grey-text center text-lighten-5 hide-on-med-and-up">
-          © 2015 Dirección de Astrofísica
+      <footer class="blue">
+        <div class="container">
+          <h5 class="grey-text text-lighten-5"><i class="fa fa-fw fa-copyright"></i></h5>
         </div>
-        <div class="container grey-text text-lighten-5 hide-on-small">
-          © 2015 Dirección de Astrofísica - DIAST
-          <a class="grey-text text-lighten-5 right" href="http://conida.gob.pe">CONIDA</a>
-        </div>
-      </div>
-    </footer>
+      </footer>
     {% endblock FOOTER %}
-    <script type="text/javascript" src="{% static 'js/jquery.min.js' %}"></script>
-    <script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/jquery.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/bootstrap.js' %}"></script>
     {% block JS %}{% endblock JS %}
   </body>
 </html>
@@ -86,11 +82,7 @@
 
     <main>
     </main>
-    <footer>
-      <div class="container">
-        <p class="Lobster"> http://www.onisan.la </p>
-      </div>
-    </footer>
+
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
 </body-->
