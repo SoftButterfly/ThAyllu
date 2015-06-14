@@ -1,0 +1,96 @@
+{% load staticfiles %}
+{% load static %}
+
+{% comment %}
+  Bloques heredados de la plantilla base:
+  ---------------------------------------
+    {% block CSS %} {% endblock CSS %}
+    {% block TOPJS %} {% endblock TOPJS %}
+    {% block MENU %} {% endblock MENU %}
+    {% block CONTENT %} {% endblock CONTENT %}
+    {% block FOOTER %} {% endblock FOOTER %}
+    {% block JS %} {% endblock JS %}
+    {% block CSS %}{% endblock CSS %}
+
+  Variables recibidas desde la vista:
+  -----------------------------------
+    FORM                (form) -- Modelo de formulatio para registro médico
+{% endcomment %}
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>     <html lang="es" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>        <html lang="es" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>        <html lang="es" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--><html lang="es" class="no-js"><!--<![endif]-->
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="author" content="Martin Josemaría Vuelta Rojas">
+    <meta name="description" content="Página web de la Dirección de Astrofísica (DIAST) de la Comisión Nacional de Desarollo e Investigación Aeroespacial (CONIDA), Agencia Espacial del Perú">
+    <title>ThAyllu | Registro de promotores de salud </title>
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'media/favicon.png' %}" />
+    <link rel="stylesheet" media="all" href="{% static 'css/normalize.min.css' %}" />
+    <link rel="stylesheet" media="all" href="{% static 'css/font-awesome.min.css' %}" />
+    <link rel="stylesheet" media="all" href="{% static 'css/bootstrap.min.css' %}" />
+    <link rel="stylesheet" media="all" href="{% static 'css/colors.css' %}" />
+    <link rel="stylesheet" media="all" href="{% static 'css/style.css' %}" />
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'> {% block CSS %}{% endblock CSS %}
+
+    <script src="{% static 'js/modernizr.min.js' %}"></script>
+
+    {% block TOPJS %}{% endblock TOPJS %}
+  <head>
+
+  <body class="grey lighten-5 grey-text text-darken-4">
+    {% block MENU %}
+      <header>
+        <nav class="container navbar navbar-default navbar-inverse navbar-fixed-top">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="index.html">
+              <p class="Lobster mediano">ThAyllu</p>
+            </a>
+          </div>
+        </nav>
+      </header>
+    {% endblock MENU %}
+
+    {% block CONTENT %}
+      <main>
+      </main>
+    {% endblock CONTENT %}
+
+    {% block FOOTER %}
+    <footer class="page-footer grey darken-3">
+      <div class="footer-copyright grey darken-4">
+        <div class="container grey-text center text-lighten-5 hide-on-med-and-up">
+          © 2015 Dirección de Astrofísica
+        </div>
+        <div class="container grey-text text-lighten-5 hide-on-small">
+          © 2015 Dirección de Astrofísica - DIAST
+          <a class="grey-text text-lighten-5 right" href="http://conida.gob.pe">CONIDA</a>
+        </div>
+      </div>
+    </footer>
+    {% endblock FOOTER %}
+    <script type="text/javascript" src="{% static 'js/jquery.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
+    {% block JS %}{% endblock JS %}
+  </body>
+</html>
+<!DOCTYPE html>
+<html>
+
+<!--body>
+
+    <main>
+    </main>
+    <footer>
+      <div class="container">
+        <p class="Lobster"> http://www.onisan.la </p>
+      </div>
+    </footer>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body-->

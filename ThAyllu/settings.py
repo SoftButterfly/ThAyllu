@@ -66,6 +66,8 @@ INSTALLED_APPS = (
 
     'captcha',
     'ckeditor',
+
+    'Users'
 )
 
 MIDDLEWARE_CLASSES = (

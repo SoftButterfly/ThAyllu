@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>LabOs</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"> 
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+</head>
+<body>
+      
+      <div class="container">
+            <h3 class="Lobster text-center" style="background-color:#fff"> Registro Certificado Recien Nacido Vivo</h3>
+
+      <form role="form">
+            <h5 class="Lobster" style="background-color:#f0f"> Datos de la Madre</h5>
+                             
+                    <form class="form-group" role="form">
+                    <div class="form-group">
+                      <label for="ejemplo_email_3" class="col-lg-2 col-xs-3 control-label">Nombres</label>
+                      <div class="col-lg-10 col-xs-9">
+                            <input type="text" class="control" id="ejemplo_email_3" placeholder="">
+                      </div>
+                    </div>
+                    
+                    <div class="form-group">
+                      <label for="ejemplo_email_3" class="col-lg-2 col-xs-4 control-label">Apellidos</label>
+                      <div class="col-lg-10 col-xs-8">
+                            <input type="text" class="control" id="ejemplo_email_3" placeholder="">
+                      </div>
+                    </div>
+
+                   <div class="form-group">
+                      <label for="ejemplo_email_3" class="col-lg-2 col-xs-3 control-label"> Nacimiento</label>
+                      <div class="col-lg-10 col-xs-9">
+                            <input type="text" class="control" id="ejemplo_email_3" placeholder="">
+                      </div>
+                    </div>
+                    
+                   <div class="form-group">
+                      <label for="ejemplo_email_3" class="col-lg-2 col-xs-4 control-label"> Departamento </label>
+                      <div class="col-lg-10 col-xs-8">
+                            <input type="text" class="control" id="ejemplo_email_3" placeholder="">
+                      </div>
+                    </div>
+
+
+                    <div class="form-group">
+                      <label for="ejemplo_email_3" class="col-lg-2 col-xs-3 control-label"> Provincia </label>
+                      <div class="col-lg-10 col-xs-9">
+                            <input type="text" class="control" id="ejemplo_email_3" placeholder="">
+                      </div>
+                    </div>
+
+                  <div class="form-group">
+                      <label for="ejemplo_email_3" class="col-lg-2 col-xs-4 control-label"> Distrito</label>
+                      <div class="col-lg-10 col-xs-8">
+                            <input type="text" class="control" id="ejemplo_email_3" placeholder="">
+                      </div>
+                    </div>
+
+                  <div class="form-group">
+                      <label for="ejemplo_email_3" class="col-lg-2 col-xs-3 control-label"> Est.Civil </label>
+                      <div class="col-lg-10 col-xs-9">
+                            <input type="text" class="control" id="ejemplo_email_3" placeholder="">
+                      </div>
+                    </div>
+
+                  
+                  <div class="form-group">
+                      <label for="ejemplo_email_3" class="col-lg-2 col-xs-4 control-label"> Ocupación </label>
+                      <div class="col-lg-10 col-xs-8">
+                            <input type="text" class="control" id="ejemplo_email_3" placeholder="">
+                      </div>
+                    </div>
+                    
+                  
+                  <div class="form-group">
+                      <label for="ejemplo_email_3" class="col-lg-2 col-xs-3 control-label"> Embarazos </label>
+                      <div class="col-lg-10 col-xs-9">
+                            <input type="text" class="control" id="ejemplo_email_3" placeholder="">
+                      </div>
+                    </div>
+                  
+                   <div class="form-group">
+                      <label for="ejemplo_email_3" class="col-lg-2 col-xs-4 control-label">  Hijos vivos </label>
+                      <div class="col-lg-10 col-xs-8">
+                            <input type="text" class="control" id="ejemplo_email_3" placeholder="">
+                      </div>
+                   </div>
+               
+                                       
+                  </form>
+              
+
+              <!-- 
+              <div class="form-group">
+                <label for="ejemplo_archivo_1">Adjuntar un archivo</label>
+                <input type="file" id="ejemplo_archivo_1">
+                <p class="help-block">Ejemplo de texto de ayuda.</p>
+              </div>
+              
+        
+              <div class="checkbox">
+                  <label>
+                  <input type="checkbox"> Activa esta casilla
+                  </label>
+              </div>
+              -->
+
+              <button type="submit" class="btn btn-default ">Enviar</button>
+            </form>
+
+        </div>
+
+        
+
+</body>
+</html>
+
+
+
+
