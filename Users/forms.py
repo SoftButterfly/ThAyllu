@@ -1,32 +1,37 @@
 # -*- encoding: utf-8 -*-
 from django.forms import ModelForm
 
-from Users.models import Medic
-
+from django.contrib.auth.models import User
+from Users.models import Mother
 
 # * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 # Objetos definidos:
-# * MedicForm
+# * LoginVisitorFrom
 # * PatientFrom
 
 
 # * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-# Tablas de la base de datos
-TABLES = {
-    'Medic': 'medic_db_table',
-    'Patient': 'patient_db_table',
-}
-
-
-# * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 # Funciones para retornar la el tiempo utc actual separado en hora y fecha
-class MedicFrom(ModelForm):
+class LoginVisitorFrom(ModelForm):
     class Meta:
-        model = Medic
+        model = User
         fields = [
-            'first_name',
-            'last_name',
-            'dni',
-            'ndc',
+            'username',
             'password',
+        ]
+
+
+class MotherForm(ModelForm):
+    class Meta:
+        model = Mother
+        fields = [
+            'DNI',
+            'FirstName',
+            'LastName',
+            'BirthDate',
+            'CivilState',
+            'Ocupation',
+            'PreviousPregnancies',
+            'Provice',
+            'District',
         ]

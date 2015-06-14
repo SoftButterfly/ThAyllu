@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% load static %}
+
+{% comment %}
+  Bloques heredados de la plantilla base:
+  ---------------------------------------
+    {% block CSS %} {% endblock CSS %}
+    {% block TOPJS %} {% endblock TOPJS %}
+    {% block MENU %} {% endblock MENU %}
+    {% block CONTENT %} {% endblock CONTENT %}
+    {% block FOOTER %} {% endblock FOOTER %}
+    {% block JS %} {% endblock JS %}
+    {% block CSS %}{% endblock CSS %}
+
+  Variables recibidas desde la vista:
+  -----------------------------------
+    FORM                (form) -- Modelo de formulatio para registro médico
+{% endcomment %}
+
+{% block CSS %}<link rel="stylesheet" media="all" href="{% static 'css/login.css' %}" />{% endblock CSS %}
+{% block CONTENT %}
+
+      <main>
+           <div class="container smoth-resize">
+              <div class="row s-pad-50">
+                <div class="smoth-resize col-xs-12 col-sm-offset-2 col-sm-8 col-md-offset-3 col-md-6 col-lg-offset-4 col-lg-6">
+                    <h2>Recomendaciones para la madre</h2>
+                    <h3>Cuidados inmediatos del RN:</h3>
+                    <ul>
+                      <li>El Recién nacido debe recibir la vacuna contra la Tuberculosis y la Hepatitis B</li>
+                      <li>Realizar el lavado de manos previo a la atención del RN</li>
+                      <li>Enseñar el lavado de manos correcto a la madre</li>
+                      <li>Limpiar la carita, boca, nariz y ojos del bebe con una tela limpia. Usar siempre una tela limpia para asear al bebe</li>
+                      <li>Secar bien al bebe y mantenerlo abrigado</li>
+                      <li>Darle de inmediato la primera leche de la mamá, llamada calostro (corta) antes de la primera hora después del nacimiento Este es el mejor alimento que protege al bebé de las enfermedades.</li>
+                      <li>Darle calor y afecto, procurar abrazarlo</li>
+                      <li>Limpiar el ombligo del bebe con alcohol puro (No Yodado), todos los días, hasta que el cordón se caiga solo</li>
+                      <li>Bañar al bebe después de que se caiga el ombligo, porque si lo bañan antes el ombligo puede infectarse</li>
+                      <li>Lavarse siempre las manos después de cambiar los pañales al bebe</li>
+                      <li>La caquita del RN es de color verde y esto es normal, no darle yerbas ni medicamentos</li>
+                      <li>El bebé debe tener partida de nacimiento y DNI, que se debe solicitar en la municipalidad. Es gratuito (no pagará nada)</li>
+                      <li>El Recién nacido debe recibir la vacuna contra la Tuberculosis y la Hepatitis B</li>
+                      <li>Los padres y madres tienen la responsabilidad de registrar al bebé en la municipalidad para que tenga su PARTIDA DE NACIMIENTO antes que cumpla los 30 días de vida</li>
+                      <li>El DNI permite que el bebé participe en varios programas sociales incluido el Seguro de Salud</li>
+
+                    </ul>
+                </div>
+              </div>
+            </div>
+
+      </main>
+{% endblock CONTENT %}

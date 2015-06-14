@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>     <html lang="es" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>        <html lang="es" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>        <html lang="es" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--><html lang="es" class="no-js"><!--<![endif]-->
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="author" content="Martin Josemaría Vuelta Rojas">
+    <title>ThAyllu | Registro de promotores de salud </title>
+    <link rel="shortcut icon" type="image/x-icon" href="/static/media/favicon.png" />
+    <link rel="stylesheet" media="all" href="css/normalize.css" />
+    <link rel="stylesheet" media="all" href="css/font-awesome.css" />
+    <link rel="stylesheet" media="all" href="css/bootstrap.css" />
+    <link rel="stylesheet" media="all" href="css/colors.css" />
+    <link rel="stylesheet" media="all" href="css/override.css" />
+    <link rel="stylesheet" media="all" href="css/extend.css" />
+    <link rel="stylesheet" media="all" href="css/helpers.css" />
+    <link rel="stylesheet" media="all" href="css/animate.css">
+
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+   
+
+    <script src="js/modernizr.min.js"></script>
+
+    
+  <head>
+
+  <body class="grey lighten-5 grey-text text-darken-4">
+    
+          <header class="blue">
+            <nav class="navbar blue">
+              <div class="container smoth-resize">
+                <h2 class="Lobster grey-text text-lighten-5">ThAyllu</h2>
+              </div>
+            </nav>
+          </header>
+        
+
+        
+          <main>
+               <div class="container smoth-resize">
+                  <div class="row s-pad-50">
+                    <div class="smoth-resize col-xs-12 col-sm-offset-2 col-sm-8 col-md-offset-3 col-md-6 col-lg-offset-4 col-lg-6">
+                        <h3 class="animated bounceInLeft retraso-0 text-center blue  grey-text text-lighten-5"  style="border-radius:5px; border: 1px solid #9e9e9e;">Septimo Mes</h3>
+
+                        <div class=" white  animated bounceInLeft retraso-1"  style="border-radius:10px; border: 1px solid #9e9e9e;" align="center">
+                        <h4>Septima vacuna</h4> 
+                              
+
+                        <form role="form">
+                        <div id="control1" display="block-inline">
+
+                          
+                             <div class="checkbox">
+                                  <label>
+                                    <input type="checkbox" name="optionsCheckbox" id="optionsCheckbox1" value="1" checked>
+                                     Primera dosis Influenza Estacional
+                                  </label>
+                              </div>
+                              
+                               
+                               
+                        </div>
+                           <div class="form-group text-right s-mar-0 s-pad-10">
+                              <button form="loginform" type="submit" class="btn blue grey-text text-lighten-5">Guardar</button>
+                              <button form="loginform" type="submit" class="btn blue grey-text text-lighten-5"><a href="cartillaVacuna6.html">Siguiente</a></button>
+                          </div>
+                      </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+          </main>
+        
+
+        
+          <footer class="blue">
+            <div class="container">
+              <h5 class="grey-text text-lighten-5"><i class="fa fa-fw fa-copyright"></i><a href="http://www.onisan.la" target="_blank" class="grey-text text-lighten-5">Onisan</a></h5>
+            </div>
+          </footer>
+        
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/bootstrap.js"></script>
+        <script>
+
+        $( document ).ready(function() {
+        $("#control1").fadeOut(0);
+        if (window.location.href=="http://localhost/appsxsalud/static/credmenor1-1.html") {
+          $("#btn1Next").fadeOut(0)
+        }
+        else{
+          $("#btn1Next").fadeIn(0)
+        }
+        ;})
+
+       
+        $("#btn1S").click(function(){
+        $("#control1").fadeIn(0);;});
+
+        $("#btn1N").click(function(){
+        $("#control1").fadeOut(0);
+        $("#btn1Next").fadeIn(0);;});
+
+        $("#guardar1").click(function(){
+        $("#btn1Next").fadeIn(0);;});
+
+        $("#btn1Next").click(function(){
+        window.location.href = "credmenor1-2.html";;});
+
+
+        </script>
+        
+  </body>
+</html>

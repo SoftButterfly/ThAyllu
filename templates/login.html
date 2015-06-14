@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% load static %}
+
+{% comment %}
+  Bloques heredados de la plantilla base:
+  ---------------------------------------
+    {% block CSS %} {% endblock CSS %}
+    {% block TOPJS %} {% endblock TOPJS %}
+    {% block MENU %} {% endblock MENU %}
+    {% block CONTENT %} {% endblock CONTENT %}
+    {% block FOOTER %} {% endblock FOOTER %}
+    {% block JS %} {% endblock JS %}
+    {% block CSS %}{% endblock CSS %}
+
+  Variables recibidas desde la vista:
+  -----------------------------------
+    FORM                (form) -- Modelo de formulatio para registro médico
+{% endcomment %}
+
+{% block CSS %}<link rel="stylesheet" media="all" href="{% static 'css/login.css' %}" />{% endblock CSS %}
+{% block CONTENT %}
+  <main>
+    <div class="container smoth-resize">
+      <div class="row s-pad-50">
+        <div class="smoth-resize col-xs-12 col-sm-offset-2 col-sm-8 col-md-offset-3 col-md-6 col-lg-offset-4 col-lg-4">
+          <form id="loginform" action="." name="loginform" method="post" accept-charset="utf-8" class="white" style="border-radius:10px; border: 1px solid #9e9e9e; overflow:hidden;">
+            {% csrf_token %}
+            <h4 class="s-mar-0 s-pad-10 blue grey-text text-lighten-5 text300">
+              <i class="fa fa-fw fa-lock"></i>Iniciar sesión
+            </h4>
+            <div class="s-pad-10 s-pad-0">
+              <div>{{ loginForm.non_field_errors }}</div>
+              <div class="form-group">
+                <label for="{{ loginForm.username.id_for_label }}" class="text300">Usuario</label>
+                <input type="text" class="form-control" id="{{ loginForm.username.id_for_label }}" name="username" placeholder="Ingrese su usuario">
+                {{ loginForm.username.errors }}
+              </div>
+              <div class="form-group">
+                <label for="{{ loginForm.password.id_for_label }}" class="text300">Contraseña</label>
+                <input type="password" class="form-control" id="{{ loginForm.password.id_for_label }}" name="password" placeholder="Password">
+                {{ loginForm.password.errors }}
+              </div>
+            </div>
+            <div class="divider grey s-pad-0 s-mar-0"></div>
+            <div class="form-group text-right s-mar-0 s-pad-10">
+              <button form="loginform" type="submit" class="btn blue grey-text text-lighten-5">Ingresar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+{% endblock CONTENT %}

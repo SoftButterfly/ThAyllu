@@ -36,59 +36,26 @@
     <link rel="stylesheet" media="all" href="{% static 'css/override.css' %}" />
     <link rel="stylesheet" media="all" href="{% static 'css/extend.css' %}" />
     <link rel="stylesheet" media="all" href="{% static 'css/helpers.css' %}" />
-    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
-
     {% block CSS %}{% endblock CSS %}
-
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
     <script src="{% static 'js/modernizr.min.js' %}"></script>
-
     {% block TOPJS %}{% endblock TOPJS %}
   <head>
-
   <body class="grey lighten-5 grey-text text-darken-4">
     {% block MENU %}
       <header class="blue">
-        <nav class="navbar blue">
+        <nav class="navbar blue s-mar-0">
           <div class="container smoth-resize">
-            <h2 class="Lobster grey-text text-lighten-5">ThAyllu</h2>
+            <h2 class="text-center Lobster grey-text text-lighten-5">ThAyllu</h2>
           </div>
         </nav>
       </header>
     {% endblock MENU %}
-
     {% block CONTENT %}
-      <main>
-        <div class="container smoth-resize">
-          <div class="row s-pad-50">
-            <div class="smoth-resize col-xs-offset-1 col-xs-10 col-sm-offset-2 col-sm-8 col-md-offset-3 col-md-6 col-lg-offset-4 col-lg-4">
-              <form id="loginform" name="loginform" class="white" style="border-radius:10px; border: 1px solid #9e9e9e; overflow:hidden;">
-                <h4 class="s-mar-0 s-pad-10 blue grey-text text-lighten-5 text300">
-                  <i class="fa fa-fw fa-lock"></i>Iniciar sesión
-                </h4>
-                <div class="s-pad-10 s-pad-0">
-                  <div class="form-group">
-                    <label for="exampleInputEmail1" class="text300">Usuario</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleInputPassword1" class="text300">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                  </div>
-                </div>
-                <div class="divider grey s-pad-0 s-mar-0"></div>
-                <div class="form-group text-right s-mar-0 s-pad-10">
-                  <button form="loginform" type="submit" class="btn blue grey-text text-lighten-5">Submit</button>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </main>
     {% endblock CONTENT %}
-
     {% block FOOTER %}
       <footer class="blue">
-        <div class="container s-pad-10">
+        <div class="container s-pad-5">
           <h5 class="grey-text text-lighten-5 text-center text100"><i class="fa fa-fw fa-copyright"></i><a href="http://www.onisan.la" target="_blank" class="grey-text text-lighten-5">Copyright Onisan</a></h5>
         </div>
       </footer>

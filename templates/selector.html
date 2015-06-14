@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% load static %}
+
+{% comment %}
+  Bloques heredados de la plantilla base:
+  ---------------------------------------
+    {% block CSS %} {% endblock CSS %}
+    {% block TOPJS %} {% endblock TOPJS %}
+    {% block MENU %} {% endblock MENU %}
+    {% block CONTENT %} {% endblock CONTENT %}
+    {% block FOOTER %} {% endblock FOOTER %}
+    {% block JS %} {% endblock JS %}
+
+  Variables recibidas desde la vista:
+  -----------------------------------
+    FORM                (form) -- Modelo de formulatio para registro médico
+{% endcomment %}
+
+{% block CSS %}
+<link rel="stylesheet" media="all" href="{% static 'css/selector.css' %}" />
+<link href='http://fonts.googleapis.com/css?family=Oxygen:700' rel='stylesheet' type='text/css'>
+{% endblock CSS %}
+{% block CONTENT %}
+  <main class="blue">
+    <a href="parto/" class="grey lighten-5 selector-option smoth-resize">
+      <h1 class="text-center grey-text text-darken-4">Parto</h1><img src="{% static 'img/madre.jpg' %}" >
+    </a>
+
+    <a href="control/" class="grey lighten-5 selector-option smoth-resize">
+      <h1 class="text-center grey-text text-darken-4">Visita</h1><img src="{% static 'img/stethoscope.png' %}" >
+    </a>
+
+    <a href="contingencia/" class="grey lighten-5 selector-option smoth-resize">
+      <h1 class="text-center grey-text text-darken-4">Emergencia</h1><img src="{% static 'img/emergency.png' %}" >
+    </a>
+  </main>
+{% endblock CONTENT %}
+{% block JS %}
+  <script>
+    $(function($){
+      function formatLayout() {
+        var H = ($(window).height() - $('header').height() - $('footer').height() - 80)/3;
+        $('.selector-option').height(H)
+        $('.selector-option img').height(H-20);
+        $('.selector-option img').width(H-20);
+        $('.selector-option h1').height(H);
+        $('.selector-option h1').css('margin-right',H);
+        $('.selector-option h1').css('line-height', H + 'px');
+        $('.selector-option h1').css('margin-top',0);
+        $('.selector-option h1').css('margin-bottom',0);
+      };
+
+      $(document).ready(function() {
+        formatLayout();
+      });
+
+      $(window).resize(function(event) {
+        formatLayout();
+      });
+    })
+  </script>
+{% endblock JS %}

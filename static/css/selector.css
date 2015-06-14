@@ -1,0 +1,23 @@
+.selector-option{
+	display: block;
+	border-radius: 10px;
+	overflow: hidden;
+	margin: 20px;
+	position: relative;
+	font-family: Oxygen;
+	font-weight: 300;
+}
+
+.selector-option img{
+	position: absolute;
+	top: 10px;
+	right:10px;
+	height: 10%;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.selector-option:hover{
+	background-color: #cfd8dc!important;
+	text-decoration: none;
+}

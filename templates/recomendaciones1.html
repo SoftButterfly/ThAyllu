@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% load static %}
+
+{% comment %}
+  Bloques heredados de la plantilla base:
+  ---------------------------------------
+    {% block CSS %} {% endblock CSS %}
+    {% block TOPJS %} {% endblock TOPJS %}
+    {% block MENU %} {% endblock MENU %}
+    {% block CONTENT %} {% endblock CONTENT %}
+    {% block FOOTER %} {% endblock FOOTER %}
+    {% block JS %} {% endblock JS %}
+    {% block CSS %}{% endblock CSS %}
+
+  Variables recibidas desde la vista:
+  -----------------------------------
+    FORM                (form) -- Modelo de formulatio para registro médico
+{% endcomment %}
+
+{% block CSS %}<link rel="stylesheet" media="all" href="{% static 'css/login.css' %}" />{% endblock CSS %}
+{% block CONTENT %}
+      <main>
+           <div class="container smoth-resize">
+              <div class="row s-pad-50">
+                <div class="smoth-resize col-xs-12 col-sm-offset-2 col-sm-8 col-md-offset-3 col-md-6 col-lg-offset-4 col-lg-6">
+                    <h2>Recomendaciones para el agente comunitario</h2>
+                    <h3>Una vez nacido el niño:</h3>
+                    <ul>
+                      <li>Avisar al establecimiento de Salud</li>
+                      <li>Cuidar a los Recién nacidos y menores de dos meses, por si se presentan señales de peligro</li>
+                      <li>Realizar visitas domiciliarias periódicas para saber si hay bebes con señales de peligro. Si se observan, transferirlos al centro de salud más cercano</li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+
+      </main>
+{% endblock CONTENT %}

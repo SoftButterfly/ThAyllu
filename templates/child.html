@@ -1,0 +1,119 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% load static %}
+
+{% comment %}
+  Bloques heredados de la plantilla base:
+  ---------------------------------------
+    {% block CSS %} {% endblock CSS %}
+    {% block TOPJS %} {% endblock TOPJS %}
+    {% block MENU %} {% endblock MENU %}
+    {% block CONTENT %} {% endblock CONTENT %}
+    {% block FOOTER %} {% endblock FOOTER %}
+    {% block JS %} {% endblock JS %}
+    {% block CSS %}{% endblock CSS %}
+
+  Variables recibidas desde la vista:
+  -----------------------------------
+    FORM                (form) -- Modelo de formulatio para registro médico
+{% endcomment %}
+
+{% block CSS %}<link rel="stylesheet" media="all" href="{% static 'css/login.css' %}" />{% endblock CSS %}
+{% block CONTENT %}
+  <main>
+           <div class="container smoth-resize">
+              <div class="row s-pad-50">
+                <div class="smoth-resize col-xs-12 col-sm-offset-2 col-sm-8 col-md-offset-3 col-md-6 col-lg-offset-4 col-lg-6">
+                    <form action="{% url 'cartillaVacuna1' %}" class="white form-horizontal" style="border-radius:10px; border: 1px solid #9e9e9e; overflow:hidden;">
+                        <h3 class="s-mar-0 s-pad-10 blue grey-text text-lighten-5 text300 text-center"> Registro Recien Nacido </h3><br>
+
+
+
+                  <div style="margin:10px;">
+
+                     <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-2 control-label">Nombres</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="inputEmail3" placeholder="Nombre">
+                            </div>
+                     </div>
+
+                     <div class="form-group">
+                          <label for="inputEmail3" class="col-sm-2 control-label">Apellidos</label>
+                             <div class="col-sm-10">
+                                <input type="text" class="form-control" id="inputEmail3" placeholder="Apellidos">
+                            </div>
+                     </div>
+
+                     <div class="form-group">
+                          <label for="inputEmail3" class="col-sm-2 control-label">Nacimiento</label>
+                             <div class="col-sm-10">
+                                <input type="text" class="form-control" id="inputEmail3" placeholder="Nacimiento">
+                            </div>
+                     </div>
+
+                     <div class="form-group">
+                          <label for="inputEmail3" class="col-sm-2 control-label">Peso</label>
+                             <div class="col-sm-10">
+                                <input type="text" class="form-control" id="inputEmail3" placeholder="Peso">
+                            </div>
+                     </div>
+
+                      <div class="form-group">
+                          <label for="inputEmail3" class="col-sm-2 control-label">Talla</label>
+                             <div class="col-sm-10">
+                                <input type="text" class="form-control" id="inputEmail3" placeholder="Talla">
+                            </div>
+                     </div>
+
+                      <div class="form-group">
+                          <label for="inputEmail3" class="col-sm-2 control-label">APGAR Rn</label>
+                             <div class="col-sm-10">
+                                <input type="text" class="form-control" id="inputEmail3" placeholder="Apgar Rn">
+                            </div>
+                     </div>
+
+                      <div class="form-group">
+                          <label for="inputEmail3" class="col-sm-2 control-label">Lugar Nacimiento</label>
+                             <div class="col-sm-10">
+                                <input type="text" class="form-control" id="inputEmail3" placeholder="Lugar Nacimiento">
+                            </div>
+                     </div>
+
+                       <div class="form-group">
+                          <label for="inputEmail3" class="col-sm-2 control-label">Dpto</label>
+                             <div class="col-sm-10">
+                                <input type="text" class="form-control" id="inputEmail3" placeholder="Departamento">
+                            </div>
+                     </div>
+
+                     <div class="form-group">
+                          <label for="inputEmail3" class="col-sm-2 control-label">Provincia</label>
+                             <div class="col-sm-10">
+                                <input type="text" class="form-control" id="inputEmail3" placeholder="Provincia">
+                            </div>
+                     </div>
+
+                      <div class="form-group">
+                          <label for="inputEmail3" class="col-sm-2 control-label">Distrito</label>
+                             <div class="col-sm-10">
+                                <input type="text" class="form-control" id="inputEmail3" placeholder="Distrito">
+                            </div>
+                     </div>
+
+                     <div class="divider grey s-pad-0 s-mar-0"></div>
+                        <div class="form-group text-right s-mar-0 s-pad-10">
+                            <a class="btn blue grey-text text-lighten-5" href="/selector/parto/registro/madre/">Atrás</a>
+                            <button type="submit" class="btn blue grey-text text-lighten-5">Registrar</button>
+                        </div>
+
+                    </div>
+
+                    </form>
+                </div>
+              </div>
+            </div>
+  </main>
+{% endblock CONTENT %}
+
+
